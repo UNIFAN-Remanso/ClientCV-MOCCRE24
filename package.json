@@ -1,0 +1,47 @@
+{
+  "name": "cliente-cv",
+  "version": "1.0.0",
+  "author": {
+    "name": "Castro"
+  },
+  "scripts": {
+    "build": "npm run build:client && npm run build:server",
+    "start": "cd app/client && npm start",
+    "lint": "npm run lint:client && npm run lint:server",
+    "fix": "npm run fix:client && npm run fix:server",
+    "format": "npm run format:client && npm run format:server",
+    "test": "npm run test:client && npm run test:server",
+    "dist": "cd app/client && npm run build",
+    "build:client": "cd app/client && npm install",
+    "start:client": "cd app/client && npm start",
+    "lint:client": "cd app/client && npm run lint",
+    "fix:client": "cd app/client && npm run fix",
+    "format:client": "cd app/client && npm run format",
+    "test:client": "cd app/client && npm test",
+    "build:server": "cd app/server && npm install",
+    "start:server": "cd app/server && npm run start",
+    "fix:server": "cd app/server && npm run fix",
+    "format:server": "cd app/server && npm run format",
+    "lint:server": "cd app/server && npm run lint",
+    "test:server": "cd app/server && npm test",
+    "contributors": "all-contributors",
+    "postinstall": "opencollective postinstall"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.5",
+    "@babel/node": "^7.23.9",
+    "@babel/preset-flow": "^7.24.1",
+    "all-contributors-cli": "^6.26.1",
+    "babel-node": "^0.0.1-security",
+    "cross-env": "^7.0.3",
+    "nodemon": "^3.1.0",
+    "webpack-dev-server": "^5.0.4"
+  },
+  "dependencies": {
+    "opencollective": "^1.0.3"
+  },
+  "collective": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/resumake"
+  }
+}
