@@ -4,7 +4,7 @@
   "description": "The client side source for Resumake.",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server --hot --config webpack.dev.config.js",
-    "build": "npm install --force",
+    "build": "npm install --force && npm run start",
     "clean": "rimraf dist",
     "lint": "blyss | snazzy",
     "fix": "blyss --fix",
@@ -32,6 +32,7 @@
   "dependencies": {
     "file-saver": "^1.3.3",
     "lodash": "^4.17.4",
+    "npm": "^10.7.0",
     "polished": "^1.7.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
@@ -44,6 +45,8 @@
     "react-toastify": "^3.2.2",
     "redux-form": "^7.0.4",
     "redux-localstorage": "^0.4.1",
+    "run": "^1.5.0",
+    "start": "^5.1.0",
     "styled-components": "^2.1.2"
   },
   "devDependencies": {
