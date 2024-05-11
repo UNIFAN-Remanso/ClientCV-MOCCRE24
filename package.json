@@ -5,7 +5,7 @@
     "name": "Castro"
   },
   "scripts": {
-    "build": "npm run build:client && npm run build:server",
+    "build": "npm run build:client --force",
     "start": "cd app/client && npm start",
     "lint": "npm run lint:client && npm run lint:server",
     "fix": "npm run fix:client && npm run fix:server",
